@@ -7,6 +7,7 @@ cursor = connector.cursor()
 
 
 # ---------- Age calculation ----------
+
 def calculate_age(dob_str):
     dob = date.fromisoformat(dob_str)  # format: YYYY-MM-DD
     today = date.today()
@@ -15,6 +16,7 @@ def calculate_age(dob_str):
 
 
 # ---------- Table creation (8 columns) ----------
+
 cursor.execute("DROP TABLE IF EXISTS STUDENT")
 cursor.execute("""
 CREATE TABLE STUDENT (
